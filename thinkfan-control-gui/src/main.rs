@@ -1,6 +1,5 @@
 use std::fs::File;
-use std::io::{self, stdin, Read, Write}; // Write trait is needed for write_all
-
+use std::io::{self, stdin, Read, Write};
 fn main() -> io::Result<()> {
 
     println!("input the speed you want from 0 to 7");
@@ -26,3 +25,29 @@ fn set_speed(speed: &str) -> io::Result<()> {
 
     Ok(())
 }
+
+
+fn set_profile() -> (){
+    //read from txt, json, etc
+    // text will be form:
+    // TEMP TEMP level
+    // TEMP TEMP level
+    // TEMP TEMP level
+    // TEMP TEMP level
+    // TEMP TEMP level
+    // TEMP TEMP level
+    // TEMP TEMP level
+    // 7 levels for this laptop .....
+    // needs to be something like a daemon running
+
+}
+
+
+fn display_config() -> (){
+    //needs to display the current config in a box
+    //need to be able to createa new config inside the box
+    //button save to activate
+    // button set current level same as the python one
+    // look docs about speed limits, levels
+}
+
